@@ -1,0 +1,58 @@
+{
+  "landingBooks": {
+    "1": {
+      "title": "Bring your Human to Work",
+      "author": "Erica Keswin",
+      "read-time": 13,
+      "reads": null
+    },
+    "2": {
+      "title": "Employee to Enterprenuer",
+      "author": "Steve Galveski",
+      "read-time": 15,
+      "reads": null
+    },
+    "3": {
+      "title": "Doesn't hurt to Ask",
+      "author": "Trey Gowdy",
+      "read-time": 13,
+      "reads": "1.9"
+    },
+    "4": {
+      "title": "The Fate of Food",
+      "author": "Amanda Little",
+      "read-time": 12,
+      "reads": "16"
+    },
+    "5": {
+      "title": "Lives of Stoics",
+      "author": "Ryan Holiday , Stephen Hansel",
+      "read-time": 13,
+      "reads": null
+    },
+    "6": {
+      "title": "Loving Your Business",
+      "author": "Debbie King",
+      "read-time": 15,
+      "reads": null
+    },
+    "7": {
+      "title": "The Lonely Century",
+      "author": "Noreena Hertz",
+      "read-time": 15,
+      "reads": null
+    },
+    "8": {
+      "title": "Eat Better , Feel Better",
+      "author": "Giada De Laurentiis",
+      "read-time": 13,
+      "reads": "1.9"
+    },
+    "9": {
+      "title": "Dropshipping",
+      "author": "James Moore",
+      "read-time": 12,
+      "reads": null
+    }
+  }
+}
