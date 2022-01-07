@@ -1,9 +1,9 @@
 import { ComponentStory } from "@storybook/react";
-import NavItems from "./navitems";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import NavItems from ".";
 export default {
-  title: "NavItems",
+  title: "molecules/NavItems",
   component: NavItems,
+  argTypes: { onClick: { action: "Pressed" } },
 };
 
 const Temlplate: ComponentStory<typeof NavItems> = (args) => (

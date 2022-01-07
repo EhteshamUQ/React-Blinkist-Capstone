@@ -40,6 +40,8 @@ declare module "@mui/material/styles" {
       mediaIcons?: string;
       btnBorderReadingTime?: string;
       iconColors?: string;
+      progressBarFull?: string;
+      progress?: string;
     };
   }
 
@@ -55,6 +57,13 @@ declare module "@mui/material/styles" {
     subtitle3?: React.CSSProperties;
     body3?: React.CSSProperties;
     caption2?: React.CSSProperties;
+  }
+}
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    subtitle3: true;
+    body3: true;
+    caption2: true;
   }
 }
 
@@ -81,6 +90,8 @@ const theme = createTheme({
       mediaIcons: "6c787f",
       btnBorderReadingTime: "3a4649",
       iconColors: "042330",
+      progress: "#E1ECFC",
+      progressBarFull: "#F1F6F4",
     },
     textColors: {
       contentCopyColor: "042330",
@@ -90,6 +101,7 @@ const theme = createTheme({
     },
   },
   typography: {
+    // fontFamily: "CeraPro",
     h1: {
       fontSize: "36px",
       lineHeight: "45px",
@@ -133,11 +145,13 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        fontFamily: "Cera Pro",
+    MuiDivider: {
+      defaultProps: {
+        color: "secondary",
       },
     },
   },
   spacing: ["4px", "8px", "12px", "16px", "20px", "24px", "32px", "48px"],
 });
+
+export default theme;

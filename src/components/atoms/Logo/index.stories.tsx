@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "./logo";
+import Logo from ".";
 
 export default {
-  title: "Logo",
+  title: "atoms/Logo",
   component: Logo,
 };
 

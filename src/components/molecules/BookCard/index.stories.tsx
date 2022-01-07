@@ -1,9 +1,9 @@
 import { ComponentStory } from "@storybook/react";
 import React from "react";
-import BookCard from "./bookCard";
+import BookCard from ".";
 import image1 from "../../../images/1.png";
 export default {
-  title: "BookCard",
+  title: "molecules/BookCard",
   component: BookCard,
 };
 

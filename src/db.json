@@ -1,58 +1,68 @@
 {
-  "landingBooks": {
-    "1": {
+  "landingBooks": [
+    {
       "title": "Bring your Human to Work",
       "author": "Erica Keswin",
-      "read-time": 13,
-      "reads": null
+      "readTime": 13,
+      "reads": null,
+      "imagePath": "/images/1.png"
     },
-    "2": {
+    {
       "title": "Employee to Enterprenuer",
       "author": "Steve Galveski",
-      "read-time": 15,
-      "reads": null
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/3.png"
     },
-    "3": {
+    {
       "title": "Doesn't hurt to Ask",
       "author": "Trey Gowdy",
-      "read-time": 13,
-      "reads": "1.9"
+      "readTime": 13,
+      "reads": "1.9",
+      "imagePath": "/images/4.png"
     },
-    "4": {
+    {
       "title": "The Fate of Food",
       "author": "Amanda Little",
-      "read-time": 12,
-      "reads": "16"
+      "readTime": 12,
+      "reads": "16",
+      "imagePath": "/images/5.png"
     },
-    "5": {
+    {
       "title": "Lives of Stoics",
       "author": "Ryan Holiday , Stephen Hansel",
-      "read-time": 13,
-      "reads": null
+      "readTime": 13,
+      "reads": null,
+      "imagePath": "/images/6.png"
     },
-    "6": {
+    {
       "title": "Loving Your Business",
       "author": "Debbie King",
-      "read-time": 15,
-      "reads": null
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/7.png"
     },
-    "7": {
+    {
       "title": "The Lonely Century",
       "author": "Noreena Hertz",
-      "read-time": 15,
-      "reads": null
+      "readTime": 15,
+      "reads": null,
+      "imagePath": "/images/8.png"
     },
-    "8": {
+    {
       "title": "Eat Better , Feel Better",
       "author": "Giada De Laurentiis",
-      "read-time": 13,
-      "reads": "1.9"
+      "readTime": 13,
+      "reads": "1.9",
+      "imagePath": "/images/9.png"
     },
-    "9": {
+    {
       "title": "Dropshipping",
       "author": "James Moore",
-      "read-time": 12,
-      "reads": null
+      "readTime": 12,
+      "reads": null,
+      "imagePath": "/images/11.png"
     }
-  }
+  ]
+  
 }
