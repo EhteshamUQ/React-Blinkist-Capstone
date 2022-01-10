@@ -1,66 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import CategoryBookList from ".";
 import { render, screen } from "@testing-library/react";
-
-const title = "Trending Blinks";
-const bookList = [
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-  {
-    title: "The Fault in our Stars",
-    author: "me",
-    readTime: "15",
-    reads: "100",
-    imagePath: "/images/3.png",
-    owned: true,
-  },
-];
+import { title, bookList } from "./data";
 const MockCategoryBookList = (
   <BrowserRouter>
     <CategoryBookList title={title} bookList={bookList} />
