@@ -7,6 +7,7 @@ const MockButtonGrid = () => (
     <ButtonGrid onClickFinished={() => null} />
   </BrowserRouter>
 );
+// Use Memory Router.
 
 test("should Generate 3 Buttons - Unit Test", () => {
   render(<MockButtonGrid />);

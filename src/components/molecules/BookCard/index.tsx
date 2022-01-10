@@ -72,7 +72,7 @@ const BookCard = ({
     padding: 0,
   };
   return (
-    <Card sx={{ height: "466px", width: "284px" }}>
+    <Card sx={{ height: "466px", width: "284px" }} data-testid="bookCard">
       <CardMedia
         component="img"
         src={imagePath}
