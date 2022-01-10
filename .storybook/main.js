@@ -11,5 +11,12 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "webpack5"
-  }
+  },
+  webpackFinal(config) {
+    delete config.resolve.alias['emotion-theming'];
+    delete config.resolve.alias['@emotion/styled'];
+    delete config.resolve.alias['@emotion/core'];
+    return config;
+  },
 }
+

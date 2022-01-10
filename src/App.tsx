@@ -6,6 +6,9 @@ import DropDownMenu from "./components/organisms/dropDownMenu";
 import Footer from "./components/organisms/footer";
 import Navbar from "./components/organisms/navbar";
 import LandingPage from "./components/pages/landingpage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EntrePage from "./components/pages/entrepreneurship";
+import ViewBookDetail from "./components/pages/ViewBookDetail";
 function App(): JSX.Element {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 
@@ -15,14 +18,22 @@ function App(): JSX.Element {
 
   return (
     <ThemeProvider theme={theme}>
-      <div color="#e5e5e5">
+      <BrowserRouter>
         <Navbar onClickExplore={onToggleDrawer} isDrawerOpen={isDrawerOpen} />
         {isDrawerOpen ? (
-          <DropDownMenu icons={icons} titles={titles} onClick={() => {}} />
+          <DropDownMenu icons={icons} titles={titles} toggleDrawer = {onToggleDrawer} />
         ) : null}{" "}
-        <LandingPage />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="entrepreneurship" element={<EntrePage />} />
+          <Route path="bookView">
+            <Route path=":bookName" element={<ViewBookDetail />}></Route>
+          </Route>
+          <Route path="*" element={<LandingPage />} />
+        </Routes>
         <Footer />
-      </div>
+      </BrowserRouter>
+     
     </ThemeProvider>
   );
 }

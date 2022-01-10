@@ -1,11 +1,20 @@
-import { ComponentStory } from "@storybook/react";
+import { ThemeProvider } from "@mui/material";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
 import BookCard from ".";
 import image1 from "../../../images/1.png";
+import theme from "../../../theme";
 export default {
   title: "molecules/BookCard",
   component: BookCard,
-};
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={theme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+} as ComponentMeta<typeof BookCard>;
 
 const Template: ComponentStory<typeof BookCard> = (args) => (
   <BookCard {...args} />

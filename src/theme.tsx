@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import "./index.css";
 declare module "@mui/material/styles" {
   // allow configuration using `createTheme`
   interface Palette {
@@ -50,6 +51,7 @@ declare module "@mui/material/styles" {
     subtitle3?: React.CSSProperties;
     body3?: React.CSSProperties;
     caption2?: React.CSSProperties;
+    caption3?: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -57,6 +59,7 @@ declare module "@mui/material/styles" {
     subtitle3?: React.CSSProperties;
     body3?: React.CSSProperties;
     caption2?: React.CSSProperties;
+    caption3?: React.CSSProperties;
   }
 }
 declare module "@mui/material/Typography" {
@@ -64,6 +67,7 @@ declare module "@mui/material/Typography" {
     subtitle3: true;
     body3: true;
     caption2: true;
+    caption3: true;
   }
 }
 
@@ -87,25 +91,29 @@ const theme = createTheme({
     },
     greyScale: {
       borders: "#bac9cf",
-      mediaIcons: "6c787f",
-      btnBorderReadingTime: "3a4649",
-      iconColors: "042330",
+      mediaIcons: "#6c787f",
+      btnBorderReadingTime: "#3a4649",
+      iconColors: "#042330",
       progress: "#E1ECFC",
       progressBarFull: "#F1F6F4",
     },
     textColors: {
       contentCopyColor: "042330",
-      textColor2: "03314b",
-      textColor3: "6d787e",
-      placeHolder: "747575",
+      textColor2: "#03314b",
+      textColor3: "#6d787e",
+      placeHolder: "#747575",
     },
   },
   typography: {
-    // fontFamily: "CeraPro",
+    fontFamily: "Cera Pro",
     h1: {
       fontSize: "36px",
       lineHeight: "45px",
       fontWeight: "bold",
+    },
+    h3: {
+      fontSize: "24px",
+      lineHeight: "30.17px",
     },
     subtitle1: {
       fontSize: "24px",
@@ -118,8 +126,8 @@ const theme = createTheme({
       fontWeight: "bold",
     },
     subtitle3: {
-      fontSize: "18px",
-      lineHeight: "24px",
+      fontSize: "20px",
+      lineHeight: "25.14px",
     },
     body1: {
       fontSize: "16px",
@@ -142,6 +150,10 @@ const theme = createTheme({
       fontSize: "14px",
       lineHeight: "22px",
       fontWeight: "bold",
+    },
+    caption3: {
+      fontSize: "14px",
+      lineHeight: "17.6px",
     },
   },
   components: {

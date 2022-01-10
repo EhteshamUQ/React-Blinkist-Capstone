@@ -1,23 +1,23 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Divider, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { MouseEventHandler } from "react";
 import IconTitle from "../../molecules/IconTitle";
-
+import { useNavigate } from "react-router-dom";
 interface dropDownMenuProps {
   icons: any[];
   titles: Array<string>;
-  onClick: MouseEventHandler;
+  toggleDrawer: Function;
 }
 
 const DropDownMenu: React.FC<dropDownMenuProps> = ({
   icons,
   titles,
-  onClick,
+  toggleDrawer,
 }) => {
+  const navigator = useNavigate();
   const boxStyling = {
     height: "400px",
     padding: "0px 250px",
-    backgroundColor: "white",
+    backgroundColor: "backgroundColors.background2",
     zIndex: 2,
   };
   const StyledDiv = styled("div")({
@@ -30,9 +30,9 @@ const DropDownMenu: React.FC<dropDownMenuProps> = ({
   });
 
   const headings = (
-    <Grid container>
+    <Grid container padding={"30px 0px"}>
       <Grid item xs>
-        <Typography variant="subtitle1" color="secondary.color">
+        <Typography variant="subtitle3" color="secondary.color">
           Explore by category
         </Typography>
       </Grid>
@@ -47,19 +47,25 @@ const DropDownMenu: React.FC<dropDownMenuProps> = ({
 
   const iconTitleLists = (
     <Grid container>
-      {icons?.map((icon, index) => (
-        <Grid item xs={4} margin={"12px 0px"}>
-          <IconTitle icon={icon} title={titles[index]} onClick={onClick} />
-        </Grid>
-      ))}
+      {icons?.map((icon, index) => {
+        const onClick = () => {
+          navigator("/" + titles[index]);
+          toggleDrawer();
+        };
+        return (
+          <Grid item xs={4} margin={"12px 0px"}>
+            <IconTitle icon={icon} title={titles[index]} onClick={onClick} />
+          </Grid>
+        );
+      })}
     </Grid>
   );
 
   return (
     <StyledDiv>
       <Box sx={boxStyling}>
-        <Grid container>{headings}</Grid>
-        <hr />
+        {headings}
+        <Divider />
         {iconTitleLists}
       </Box>
       <div className="bg"></div>

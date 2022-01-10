@@ -1,15 +1,31 @@
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import {
   Button,
   Card,
   CardContent,
   CardMedia,
   Grid,
-  Typography,
+  SxProps,
+  Typography
 } from "@mui/material";
 import { FiMoreHorizontal } from "react-icons/fi";
-import AddIcon from "@mui/icons-material/Add";
+import IconWithText from "../../atoms/iconWIthText";
+import ProgressBar from "../../atoms/progressBar";
+import PersonIcon from "../../icons/personIcon";
+const plusIcon = (
+  <svg
+    width="25"
+    height="24"
+    viewBox="0 0 25 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11.5 11V5H13.5V11H19.5V13H13.5V19H11.5V13H5.5V11H11.5Z"
+      fill="#0365F2"
+    />
+  </svg>
+);
 
 interface BookCardProps {
   imagePath: string;
@@ -18,6 +34,8 @@ interface BookCardProps {
   readTime?: string;
   reads?: string;
   owned?: boolean;
+  onClick: Function;
+  percentComplete?:number
 }
 
 const BookCard = ({
@@ -27,73 +45,93 @@ const BookCard = ({
   readTime,
   reads,
   owned,
+  onClick,
+  percentComplete
 }: BookCardProps) => {
+  const ButtonStyling: SxProps = {
+    position: "relative",
+    top: "10px",
+    width: "100%",
+    height: "11%",
+    color: "secondary.main",
+    borderColor: "#e1ecfc",
+    "&:hover": {
+      backgroundColor: "secondary.main",
+      alignItems: "center",
+      color: "white",
+      path: {
+        fill: "white",
+      },
+    },
+  };
+
+  const CardContentStyling: SxProps = {
+    display: "flex",
+    flexDirection: "column",
+    margin: 0,
+    padding: 0,
+  };
   return (
-    <Card sx={{ height: "535px", width: "343px" }}>
-      <CardMedia component="img" src={imagePath} alt="Book Image" />
-      <CardContent sx={{ display: "flex", flexDirection: "column" }}>
-        <Grid container direction={"column"}>
-          <Typography variant="subtitle1" paddingTop={"14px"}>
+    <Card sx={{ height: "466px", width: "284px" }}>
+      <CardMedia
+        component="img"
+        src={imagePath}
+        alt="Book Image"
+        height={"282px"}
+      />
+      <CardContent sx={CardContentStyling}>
+        <Grid container direction={"column"} padding="0" margin="0">
+          <Typography variant="subtitle2" margin={"5% 0px 0px"}>
             {title}
           </Typography>
-          <Typography variant="body1" paddingTop={"7px"}>
+          <Typography
+            variant="body1"
+            paddingTop={"5%"}
+            sx={{ color: "textColors.textColor3" }}
+          >
             {author}
           </Typography>
           <Grid
             container
             justifyContent={"space-between"}
             alignContent={"start"}
+            paddingTop={"5%"}
           >
-            <Grid item alignContent={"center"} paddingTop={"15px"} xs>
-              <AccessTimeIcon fontSize="inherit" />
-              <Typography variant="caption">{readTime}-minute read</Typography>
+            <Grid item xs={7.5}>
+              <IconWithText
+                title={readTime + "-minute read"}
+                children={<AccessTimeIcon fontSize="inherit" />}
+              />
             </Grid>
             {reads !== undefined && reads !== null ? (
-              <Grid item paddingTop={"15px"}>
-                <PersonOutlineOutlinedIcon fontSize="inherit" />
-                <Typography variant="caption">{reads}k reads</Typography>
+              <Grid item xs>
+                <IconWithText title={reads + "k reads"} children={PersonIcon} />
               </Grid>
             ) : null}
             {owned !== undefined && owned === true ? (
-              <Grid container justifyContent={"end"}>
+              <Grid
+                container
+                justifyContent={"end"}
+                marginRight={"5%"}
+                marginTop={"5%"}
+              >
                 <FiMoreHorizontal fontSize={"medium"} />
               </Grid>
             ) : null}
           </Grid>
         </Grid>
       </CardContent>
-      {owned === true ? (
-        <Grid
-          container
-          padding={"0px"}
-          sx={{
-            backgroundColor: "#F1F6F4",
-            height: "24px",
-            margin: "10px 0px 0px 0px",
-          }}
-        >
-          <Grid item xs={3} sx={{ backgroundColor: "#E1ECFC" }}></Grid>
+      {owned === true && owned !== undefined ? (
+        <Grid container padding={"0px"} top={"15px"} position={"relative"}>
+          <ProgressBar  percentComplete={percentComplete}/>
         </Grid>
       ) : (
-        <div>
-          <hr />
-          <Button
-            sx={{
-              height: "40px",
-              margin: "0px 0px 0px 0px",
-              alignContent: "center",
-              width: "100%",
-              color: "secondary.color",
-              "&:hover": {
-                backgroundColor: "secondary.color",
-                color: "white",
-              },
-            }}
-          >
-            <AddIcon fontSize="medium" />
-            <Typography variant="body1"> Add to My Library</Typography>
-          </Button>
-        </div>
+        <Button variant="outlined" sx={ButtonStyling} onClick={() => onClick(title)}>
+          {plusIcon}{" "}
+          <Typography variant="body1" padding={"4px 0px 0px 4px"}>
+            Add to Library
+          </Typography>
+        </Button>
       )}
     </Card>
   );

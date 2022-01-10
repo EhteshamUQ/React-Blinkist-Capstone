@@ -23,5 +23,4 @@ export const dropDown = Template.bind({});
 dropDown.args = {
   icons: icons,
   titles: titles,
-  onClick: () => null,
 };

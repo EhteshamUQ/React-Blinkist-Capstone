@@ -1,4 +1,4 @@
-import SearchIcon from "@mui/icons-material/Search";
+import SearchIcon from "../../atoms/searchIcon";
 import Grid from "@mui/material/Grid";
 import React, { MouseEventHandler } from "react";
 import CustomAvatar from "../../atoms/avatar";
@@ -17,7 +17,7 @@ const Navbar: React.FC<NavBarProps> = ({ isDrawerOpen, onClickExplore }) => {
           <Logo />
         </Grid>
         <Grid item sx={{ marginRight: "42px" }}>
-          <SearchIcon fontSize="small" />
+          <SearchIcon />
         </Grid>
         <Grid item sx={{ marginRight: "42px" }}>
           <NavItems

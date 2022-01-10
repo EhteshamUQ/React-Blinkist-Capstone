@@ -18,11 +18,11 @@ const TabBar: React.FC = () => {
     <>
       <Box>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="Currently Reading" sx={cssRules} />
-          <Tab label="Finished Reading" sx={cssRules} />
+          <Tab label="Currently Reading" sx={cssRules} value={0} />
+          <Tab label="Finished Reading" sx={cssRules} value={1} />
         </Tabs>
       </Box>
-      <TabPanel />
+      <TabPanel value={value} />
     </>
   );
 };
