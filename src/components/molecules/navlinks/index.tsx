@@ -26,17 +26,19 @@ const NavItems: React.FC<NavItemsProps> = ({
       cursor: dropdown === true ? "pointer" : "auto",
     },
   });
+  const arrow =
+    dropdown === true ? (
+      isDrawerOpen === true ? (
+        <KeyboardArrowUpIcon fontSize="small" />
+      ) : (
+        <KeyboardArrowDownIcon fontSize="small" />
+      )
+    ) : null;
   return (
     <div>
       <StyledDiv onClick={onClick}>
         <Typography variant="body1">{title}</Typography>
-        {dropdown === true ? (
-          isDrawerOpen === true ? (
-            <KeyboardArrowUpIcon fontSize="small" />
-          ) : (
-            <KeyboardArrowDownIcon fontSize="small" />
-          )
-        ) : null}
+        {arrow}
       </StyledDiv>
       {isDrawerOpen === true ? <Divider sx={{ height: "1px" }} light /> : null}
     </div>

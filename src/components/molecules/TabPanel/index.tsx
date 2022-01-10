@@ -2,24 +2,24 @@ import { Box, Grid } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import BookCard from "../BookCard";
-import { bookType } from "./bookType";
+import { BookType } from "./bookType";
 interface TabPanelProps {
   value?: number;
 }
-interface bookTypeExt extends bookType {
+interface BookTypeExt extends BookType {
   id?: string;
 }
 
 const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
   const landingBooks = require("../../../db.json");
-  const books: bookType[] = landingBooks["landingBooks"];
-  const [finishedBooks, setFinishedBooks] = useState<bookTypeExt[]>();
+  const books: BookType[] = landingBooks["landingBooks"];
+  const [finishedBooks, setFinishedBooks] = useState<BookTypeExt[]>();
   useEffect(() => {
     async function getData() {
-      const books = await axios
+      const booksFromServer = await axios
         .get("http://localhost:3001/finished")
         .then((response) => response.data);
-      return books as bookTypeExt[];
+      return booksFromServer as BookTypeExt[];
     }
     getData()
       .then((res) => setFinishedBooks(res))
@@ -31,7 +31,7 @@ const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
         <Grid container>
           {books.map((book) => (
             <Grid item xs={3.3} margin={"25px 0px"}>
-              <BookCard {...book} owned onClick={() => {}} />
+              <BookCard {...book} owned onClick={() => null} />
             </Grid>
           ))}
         </Grid>
@@ -49,7 +49,7 @@ const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
                   imagePath={book["imagePath"]}
                   reads={book["reads"]}
                   readTime={book["readTime"]}
-                  onClick={() => {}}
+                  onClick={() => null}
                   author={book["author"]}
                   percentComplete={100}
                 />

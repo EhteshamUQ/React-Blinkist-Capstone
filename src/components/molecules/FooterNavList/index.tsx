@@ -1,7 +1,6 @@
-import { Grid } from "@mui/material";
-import React from "react";
-import { Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/system";
+import React from "react";
 interface FooterNavListProps {
   title?: string;
   items?: Array<string>;

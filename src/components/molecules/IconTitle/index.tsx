@@ -1,13 +1,13 @@
 import { Grid, useTheme, Typography } from "@mui/material";
 import React, { MouseEventHandler } from "react";
 
-interface iconTitleProps {
+interface IconTitleProps {
   icon?: any;
   title?: string;
   onClick: MouseEventHandler;
 }
 
-const IconTitle: React.FC<iconTitleProps> = ({ icon, title, onClick }) => {
+const IconTitle: React.FC<IconTitleProps> = ({ icon, title, onClick }) => {
   const theme = useTheme();
   const style = {
     "&:hover": {

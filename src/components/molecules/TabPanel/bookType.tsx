@@ -1,4 +1,4 @@
-export interface bookType {
+export interface BookType {
   title?: string;
   author?: string;
   readTime?: string;

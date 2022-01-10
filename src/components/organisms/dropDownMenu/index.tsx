@@ -2,13 +2,13 @@ import { Box, Divider, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import IconTitle from "../../molecules/IconTitle";
 import { useNavigate } from "react-router-dom";
-interface dropDownMenuProps {
+interface DropDownMenuProps {
   icons: any[];
   titles: Array<string>;
   toggleDrawer: Function;
 }
 
-const DropDownMenu: React.FC<dropDownMenuProps> = ({
+const DropDownMenu: React.FC<DropDownMenuProps> = ({
   icons,
   titles,
   toggleDrawer,

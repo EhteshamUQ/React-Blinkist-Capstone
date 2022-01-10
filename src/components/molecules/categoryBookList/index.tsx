@@ -1,10 +1,10 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import BookCard from "../BookCard";
-import { bookType } from "../TabPanel/bookType";
+import { BookType } from "../TabPanel/bookType";
 interface CategoryBookListProps {
   title: string;
-  bookList: bookType[];
+  bookList: BookType[];
 }
 
 const CategoryBookList: React.FC<CategoryBookListProps> = ({
@@ -16,8 +16,8 @@ const CategoryBookList: React.FC<CategoryBookListProps> = ({
     margin: "5% 18.5% 5% 18.5%",
     padding: " 0%",
   };
-  const OnClick = (title: string) => {
-    navigator("/bookView/" + title);
+  const OnClick = (bookTitle: string) => {
+    navigator("/bookView/" + bookTitle);
   };
   return (
     <Box sx={boxStyling}>
