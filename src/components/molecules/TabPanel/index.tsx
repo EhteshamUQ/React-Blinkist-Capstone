@@ -24,13 +24,13 @@ const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
     getData()
       .then((res) => setFinishedBooks(res))
       .catch((reject) => console.log(reject));
-  });
+  }, []);
   return (
-    <Grid container marginBottom={"15%"}>
+    <Grid container marginBottom={"15%"} marginRight={"18%"}>
       <Box display={value === 0 ? "block" : "none"}>
         <Grid container>
           {books.map((book) => (
-            <Grid item xs={3.3} margin={"25px 0px"}>
+            <Grid item xs={3.2} margin={"25px 0px 0px 0px"}>
               <BookCard {...book} owned onClick={() => null} />
             </Grid>
           ))}
@@ -38,7 +38,7 @@ const TabPanel: React.FC<TabPanelProps> = ({ value }) => {
       </Box>
       <Box
         display={value === 1 ? "block" : "none"}
-        marginBottom={value ===1 ? "15%" : "0"}
+        marginBottom={value === 1 ? "20%" : "0"}
       >
         <Grid container sx={{ marginTop: "10%" }}>
           {finishedBooks !== null && finishedBooks !== undefined

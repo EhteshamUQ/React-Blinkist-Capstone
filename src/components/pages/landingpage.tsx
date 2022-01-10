@@ -7,12 +7,12 @@ const LandingPage: React.FC = () => {
       <Grid item>
         <Typography
           variant="h1"
-          sx={{ marginTop: "59px", marginLeft: "264px" }}
+          sx={{ marginTop: "59px", marginLeft: "18%" }}
         >
           My Library
         </Typography>
       </Grid>
-      <Grid item sx={{ marginTop: "59px", marginLeft: "264px" }}>
+      <Grid item sx={{ marginTop: "59px", marginLeft: "18%" }}>
         <TabBar />
       </Grid>
     </Grid>

@@ -12,8 +12,8 @@ const IconTitle: React.FC<IconTitleProps> = ({ icon, title, onClick }) => {
   const style = {
     "&:hover": {
       cursor: "pointer",
-      color: "blue",
-      ".icon svg": {
+      color: "secondary.color",
+      path: {
         fill: "blue" ,
       },
       ".text": {

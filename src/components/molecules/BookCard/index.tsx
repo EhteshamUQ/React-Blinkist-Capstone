@@ -1,4 +1,3 @@
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import {
   Button,
   Card,
@@ -6,12 +5,13 @@ import {
   CardMedia,
   Grid,
   SxProps,
-  Typography
+  Typography,
 } from "@mui/material";
 import { FiMoreHorizontal } from "react-icons/fi";
 import IconWithText from "../../atoms/iconWIthText";
 import ProgressBar from "../../atoms/progressBar";
 import PersonIcon from "../../icons/personIcon";
+import TimeIcon from "../../atoms/timeIcon";
 const plusIcon = (
   <svg
     width="25"
@@ -35,7 +35,7 @@ interface BookCardProps {
   reads?: string;
   owned?: boolean;
   onClick: Function;
-  percentComplete?:number
+  percentComplete?: number;
 }
 
 const BookCard = ({
@@ -46,7 +46,7 @@ const BookCard = ({
   reads,
   owned,
   onClick,
-  percentComplete
+  percentComplete,
 }: BookCardProps) => {
   const ButtonStyling: SxProps = {
     position: "relative",
@@ -100,7 +100,7 @@ const BookCard = ({
             <Grid item xs={7.5}>
               <IconWithText
                 title={readTime + "-minute read"}
-                children={<AccessTimeIcon fontSize="inherit" />}
+                children={TimeIcon}
               />
             </Grid>
             {reads !== undefined && reads !== null ? (
@@ -123,10 +123,14 @@ const BookCard = ({
       </CardContent>
       {owned === true && owned !== undefined ? (
         <Grid container padding={"0px"} top={"15px"} position={"relative"}>
-          <ProgressBar  percentComplete={percentComplete}/>
+          <ProgressBar percentComplete={percentComplete} />
         </Grid>
       ) : (
-        <Button variant="outlined" sx={ButtonStyling} onClick={() => onClick(title)}>
+        <Button
+          variant="outlined"
+          sx={ButtonStyling}
+          onClick={() => onClick(title)}
+        >
           {plusIcon}{" "}
           <Typography variant="body1" padding={"4px 0px 0px 4px"}>
             Add to Library

@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import IconWithText from "../../atoms/iconWIthText";
 import ButtonGrid from "../../molecules/ButtonGrid";
-import timeIcon from "../../atoms/rightIcon/timeIcon";
+import timeIcon from "../../atoms/timeIcon";
 
 interface BookDetailsProps {
   title?: string;

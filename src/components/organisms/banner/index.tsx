@@ -12,17 +12,24 @@ const Banner: React.FC<BannerProps> = ({ title, subtitle }) => {
       margin={"0% 18% 0%"}
       sx={{
         backgroundColor: "backgroundColors.background2",
-        width: "58%",
+        width: "50%",
         height: "263px",
         padding: " 0% 5%",
       }}
     >
       <Grid container>
         <Grid item xs>
-          <Typography variant="h1" paddingTop="5%" width={"40%"}>
+          <Typography variant="h1" paddingTop="5%" width={"65%"}>
             {title}
           </Typography>
-          <Typography variant="subtitle2" width="62.5%" marginRight={"12%"}>
+          <Typography
+            variant="subtitle2"
+            color={"textColors.textColor3"}
+            fontWeight={"400"}
+            width="65%"
+            marginTop={"5%"}
+            marginRight={"12%"}
+          >
             {subtitle}
           </Typography>
         </Grid>

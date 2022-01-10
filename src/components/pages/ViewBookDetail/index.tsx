@@ -1,4 +1,5 @@
-import { Typography } from "@mui/material";
+import { Typography , Box} from "@mui/material";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import BookDetails from "../../organisms/bookDetails";
 
@@ -15,8 +16,11 @@ const ViewBookDetail: React.FC = () => {
   }
   const bookInfo = books[bookName];
   if (bookInfo == null) {
-    return <Typography variant="h1">404 Book not Found</Typography>;
+    return <Box width="100%" height="50vh" marginLeft="35%" marginTop="7%">
+      <Typography variant="h1">404 Book not Found</Typography>
+    </Box>
   }
+  
   const onFinishedClick = async () => {
     const axios = require("axios").default;
     const book = {
@@ -36,6 +40,8 @@ const ViewBookDetail: React.FC = () => {
       .catch(() => {
         console.log("Cannot Add ,Already Present");
       });
+
+      
   };
 
   return <BookDetails {...bookInfo} onClickFinish={onFinishedClick} />;

@@ -114,6 +114,7 @@ const theme = createTheme({
     h3: {
       fontSize: "24px",
       lineHeight: "30.17px",
+      fontWeight:"bold"
     },
     subtitle1: {
       fontSize: "24px",
@@ -126,8 +127,9 @@ const theme = createTheme({
       fontWeight: "bold",
     },
     subtitle3: {
-      fontSize: "20px",
-      lineHeight: "25.14px",
+      fontSize: "16px",
+      lineHeight: "20.11px",
+      fontWeight:"bold"
     },
     body1: {
       fontSize: "16px",

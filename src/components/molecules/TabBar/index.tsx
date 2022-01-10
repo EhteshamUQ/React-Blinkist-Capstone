@@ -9,14 +9,14 @@ const TabBar: React.FC = () => {
   };
   const cssRules = {
     height: "39px",
-    width: "367px",
+    width: "33%",
     alignItems: "flex-start",
     padding: "0",
     margin: "0",
   };
   return (
     <>
-      <Box>
+      <Box sx = {{ borderBottom:"1px solid" , borderColor:"divider" ,width:"63%"}}>
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Currently Reading" sx={cssRules} value={0} />
           <Tab label="Finished Reading" sx={cssRules} value={1} />

@@ -12,7 +12,7 @@ interface NavBarProps {
 const Navbar: React.FC<NavBarProps> = ({ isDrawerOpen, onClickExplore }) => {
   return (
     <header>
-      <Grid container sx={{ padding: "23px 250px 0px" }}>
+      <Grid container sx={{ padding: "23px 17% 0px" }}>
         <Grid item sx={{ marginRight: "42px" }}>
           <Logo />
         </Grid>
@@ -27,7 +27,7 @@ const Navbar: React.FC<NavBarProps> = ({ isDrawerOpen, onClickExplore }) => {
             onClick={onClickExplore}
           />
         </Grid>
-        <Grid item xs>
+        <Grid item marginRight={"50%"}>
           <NavItems title="My Library" />
         </Grid>
         <Grid item>

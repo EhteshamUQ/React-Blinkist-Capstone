@@ -16,7 +16,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
   const navigator = useNavigate();
   const boxStyling = {
     height: "400px",
-    padding: "0px 250px",
+    padding: "0px 25% 0% 20%",
     backgroundColor: "backgroundColors.background2",
     zIndex: 2,
   };
@@ -30,23 +30,23 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
   });
 
   const headings = (
-    <Grid container padding={"30px 0px"}>
+    <Grid container padding={"30px 0px 15px"}>
       <Grid item xs>
-        <Typography variant="subtitle3" color="secondary.color">
+        <Typography variant="subtitle3" color="secondary.color" >
           Explore by category
         </Typography>
       </Grid>
       <Grid item xs>
-        <Typography variant="body1">See recently added titles</Typography>
+        <Typography variant="body1" color="textColors.textColor3">See recently added titles</Typography>
       </Grid>
       <Grid item xs>
-        <Typography variant="body1">See popular titles</Typography>
+        <Typography variant="body1" color="textColors.textColor3">See popular titles</Typography>
       </Grid>
     </Grid>
   );
 
   const iconTitleLists = (
-    <Grid container>
+    <Grid container marginTop={"15px"}>
       {icons?.map((icon, index) => {
         const onClick = () => {
           navigator("/" + titles[index]);
@@ -65,7 +65,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
     <StyledDiv>
       <Box sx={boxStyling}>
         {headings}
-        <Divider />
+        <Divider/>
         {iconTitleLists}
       </Box>
       <div className="bg"></div>

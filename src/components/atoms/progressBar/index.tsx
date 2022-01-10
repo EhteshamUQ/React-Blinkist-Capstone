@@ -11,10 +11,10 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentComplete }) => {
     padding: 0,
     margin: 0,
   });
-   const percentCompleted =
+  const percentCompleted =
     percentComplete !== undefined && percentComplete !== null
       ? percentComplete + "%"
-      : "30%" ;
+      : "30%";
   const InnerDiv = styled("div")({
     width: percentCompleted,
     height: "15px",
@@ -23,8 +23,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentComplete }) => {
     backgroundColor: "#E1ECFC",
   });
   return (
-    <StyledDiv>
-      <InnerDiv></InnerDiv>
+    <StyledDiv data-testid="div">
+      <InnerDiv data-testid="div"></InnerDiv>
     </StyledDiv>
   );
 };

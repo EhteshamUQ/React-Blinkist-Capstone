@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import theme from "../../theme";
-import EntrePage from "./entrepreneurship";
+import theme from "../../../theme";
+import EntrePage from ".";
 
 export default {
   title: "pages/Entre",

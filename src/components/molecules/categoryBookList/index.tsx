@@ -26,7 +26,7 @@ const CategoryBookList: React.FC<CategoryBookListProps> = ({
       </Typography>
       <Grid container>
         {bookList.map((book) => (
-          <Grid item xs={3.5} marginBottom={"5%"}>
+          <Grid item xs={4} marginBottom={"5%"}>
             <BookCard {...book} onClick={OnClick} />
           </Grid>
         ))}
