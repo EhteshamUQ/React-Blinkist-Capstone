@@ -1,5 +1,4 @@
-import { Typography , Box} from "@mui/material";
-import { useEffect } from "react";
+import { Box, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import BookDetails from "../../organisms/bookDetails";
 
