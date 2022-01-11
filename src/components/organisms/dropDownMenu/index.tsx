@@ -53,7 +53,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({
           toggleDrawer();
         };
         return (
-          <Grid item xs={4} margin={"12px 0px"}>
+          <Grid item xs={4} margin={"12px 0px"} data-testid="dropdownitem">
             <IconTitle icon={icon} title={titles[index]} onClick={onClick} />
           </Grid>
         );
