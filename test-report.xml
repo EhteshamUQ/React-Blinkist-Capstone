@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/iconWIthText/index.test.tsx">
+    <testCase name="IconWithText - Unit Test" duration="88"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/ButtonGrid/index.test.tsx">
+    <testCase name="should Generate 3 Buttons - Unit Test" duration="473"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/BookCard/index.test.tsx">
+    <testCase name="Unit Test - Book Card" duration="455"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/categoryBookList/index.test.tsx">
+    <testCase name="Unit Test - Category Book list" duration="849"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/progressBar/index.test.tsx">
+    <testCase name="Unit Test - Progress Bar" duration="73"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/FooterNavList/index.test.tsx">
+    <testCase name="should render a list of Elements" duration="134"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/avatar/index.test.tsx">
+    <testCase name="Unit Test - Avatar" duration="69"/>
+  </file>
 </testExecutions>
