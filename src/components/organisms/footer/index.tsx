@@ -4,8 +4,8 @@ import FooterNavLists from "../../molecules/FooterNavLists";
 import SiteMap from "../../molecules/sitemap";
 import SloganLogo from "../../molecules/SloganLogo";
 
-const titles = ["Editorial", "useful links", "Company"];
-const subtitlesList = [
+export const titles = ["Editorial", "Useful links", "Company"];
+export const subtitlesList = [
   [
     "Book Lists",
     "What is nonFiction",
@@ -30,6 +30,7 @@ const Footer: React.FC = () => {
       sx={{
         backgroundColor: "backgroundColors.background2",
       }}
+      data-testid="footer"
     >
       <Grid
         container
