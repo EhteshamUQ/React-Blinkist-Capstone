@@ -10,7 +10,7 @@ const EntrePage: React.FC = () => {
   const subtitle =
     "Everything you need to know about thriving on a shoestring budget, making your first million, and hiring right from the start.";
   return (
-    <Box marginTop={"5%"}>
+    <Box marginTop={"5%"} data-testid="EntrePage">
       <Banner title={titleBanner} subtitle={subtitle} />
       <SearchBar placeholder={placeholderText} />
       {titles.map((title) => (
