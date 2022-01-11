@@ -20,7 +20,7 @@ const Template: ComponentStory<typeof BookDetails> = (args) => (
 );
 
 export const bookDetail = Template.bind({});
-bookDetail.args = {
+export const argz = {
   title: "Beyond Enterpreneurship 2.0",
   subtitle: "Turning Your Business into an Enduring Great Company",
   readTime: "12",
@@ -29,3 +29,5 @@ bookDetail.args = {
   synopsis:
     "Beyond Entrepreneurship 2.0 (2020) updates Jim Collins and Bill Lazier’s essential 1992 business handbook, Beyond Entrepreneurship for the entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text, supplemented with cutting-edge insights and case studies pertinent to today’s business world.",
 };
+
+bookDetail.args = argz;
