@@ -11,7 +11,7 @@ interface NavBarProps {
 
 const Navbar: React.FC<NavBarProps> = ({ isDrawerOpen, onClickExplore }) => {
   return (
-    <header>
+    <header data-testid="navbar">
       <Grid container sx={{ padding: "23px 17% 0px" }}>
         <Grid item sx={{ marginRight: "42px" }}>
           <Logo />
