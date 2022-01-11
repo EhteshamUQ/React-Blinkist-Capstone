@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/FooterNavList/index.test.tsx">
-    <testCase name="should render a list of Elements" duration="137"/>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/FooterNavLists/index.test.tsx">
+    <testCase name="should Display Footer Lists" duration="227"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/organisms/banner/index.test.tsx">
+    <testCase name="should Render Banner" duration="184"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/avatar/index.test.tsx">
-    <testCase name="Unit Test - Avatar" duration="79"/>
-  </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/FooterNavLists/index.test.tsx">
-    <testCase name="should Display Footer Lists" duration="260"/>
-  </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/ButtonGrid/index.test.tsx">
-    <testCase name="should Generate 3 Buttons - Unit Test" duration="405"/>
+    <testCase name="Unit Test - Avatar" duration="82"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/BookCard/index.test.tsx">
-    <testCase name="Unit Test - Book Card" duration="452"/>
+    <testCase name="Unit Test - Book Card" duration="414"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/ButtonGrid/index.test.tsx">
+    <testCase name="should Generate 3 Buttons - Unit Test" duration="490"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/categoryBookList/index.test.tsx">
-    <testCase name="Unit Test - Category Book list" duration="653"/>
+    <testCase name="Unit Test - Category Book list" duration="689"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/App.test.tsx">
-    <testCase name="should Display App" duration="1053"/>
+    <testCase name="should Display App" duration="1095"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/sitemap/index.test.tsx">
-    <testCase name="should display SiteMap" duration="97"/>
+    <testCase name="should display SiteMap" duration="111"/>
   </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/SloganLogo/index.test.tsx">
-    <testCase name="should display Sloganlogo" duration="67"/>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/FooterNavList/index.test.tsx">
+    <testCase name="should render a list of Elements" duration="164"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/navlinks/index.test.tsx">
-    <testCase name="should display NavItems and also Demonstrate OnClick" duration="92"/>
-    <testCase name="Should display a navitem with arrow icon" duration="22"/>
-  </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/IconTitle/index.test.tsx">
-    <testCase name="should display icon with title" duration="58"/>
-  </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/TabBar/index.test.tsx">
-    <testCase name="should Display Tab Bar" duration="633"/>
-  </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/TabPanel/index.test.tsx">
-    <testCase name="should display Books" duration="438"/>
+    <testCase name="should display NavItems and also Demonstrate OnClick" duration="66"/>
+    <testCase name="Should display a navitem with arrow icon" duration="28"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/searchBar/index.test.tsx">
-    <testCase name="should display Search Bar" duration="53"/>
+    <testCase name="should display Search Bar" duration="65"/>
   </file>
-  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/progressBar/index.test.tsx">
-    <testCase name="Unit Test - Progress Bar" duration="29"/>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/TabPanel/index.test.tsx">
+    <testCase name="should display Books" duration="550"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/TabBar/index.test.tsx">
+    <testCase name="should Display Tab Bar" duration="699"/>
   </file>
   <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/iconWIthText/index.test.tsx">
-    <testCase name="IconWithText - Unit Test" duration="37"/>
+    <testCase name="IconWithText - Unit Test" duration="60"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/atoms/progressBar/index.test.tsx">
+    <testCase name="Unit Test - Progress Bar" duration="43"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/IconTitle/index.test.tsx">
+    <testCase name="should display icon with title" duration="33"/>
+  </file>
+  <file path="/home/ehteqm/Front_End_Dev/React/capstone-blinkist/src/components/molecules/SloganLogo/index.test.tsx">
+    <testCase name="should display Sloganlogo" duration="33"/>
   </file>
 </testExecutions>

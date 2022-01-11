@@ -76,7 +76,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/**/**/*.tsx"
+      "src/**/**/**/*.tsx",
+      "!src/**/**/**/*.stories.tsx"
     ]
   }
 }
