@@ -3,5 +3,5 @@ projectKey=demox
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.25934
 dashboardUrl=https://sonarcloud.io/dashboard?id=demox
-ceTaskId=AX5IrylrEROjGoIfea-4
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX5IrylrEROjGoIfea-4
+ceTaskId=AX5IsrqbC4ar6UFrrisA
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX5IsrqbC4ar6UFrrisA
