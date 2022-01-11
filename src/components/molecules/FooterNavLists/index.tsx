@@ -11,9 +11,9 @@ const FooterNavLists: React.FC<FooterNavListsProps> = ({
   itemLists,
 }) => {
   return (
-    <Grid container sx={{ width: "800px", height: "224px" }}>
+    <Grid container sx={{ height: "224px" , marginLeft:"10%" }}>
       {itemLists?.map((items, index) => (
-        <Grid item xs sx={{ margin: "0px 50px" }}>
+        <Grid item xs sx={{ margin: "0px 0px" }}>
           <FooterNavList title={titles[index]} items={items} />
         </Grid>
       ))}

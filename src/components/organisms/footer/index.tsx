@@ -35,8 +35,7 @@ const Footer: React.FC = () => {
       <Grid
         container
         sx={{
-          margin: "38px auto 108px",
-          width: "1256px",
+          margin: "38px 18% 108px",
           height: "224px",
           backgroundColor: "backgroundColors.background2",
         }}

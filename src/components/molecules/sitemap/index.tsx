@@ -6,7 +6,7 @@ const SiteMap: React.FC = () => {
     padding: "5px",
   });
   return (
-    <Grid container sx={{ height: "229x", width: "546px" }}>
+    <Grid container sx={{ height: "229x", width: "546px" , color:"textColors.textColor3" }}>
       <StyledGrid item>
         <Typography variant="caption">
           &copy; Blinkist 2021 Sitemap |

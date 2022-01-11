@@ -12,7 +12,7 @@ const FooterNavList: React.FC<FooterNavListProps> = ({ title, items }) => {
       container
       spacing={theme.spacing(2)}
       alignItems="flex-start"
-      direction="column"
+      direction="column" width="200px"
     >
       <Grid item>
         <Typography variant="body1" data-testid="titleElement">
@@ -21,7 +21,7 @@ const FooterNavList: React.FC<FooterNavListProps> = ({ title, items }) => {
       </Grid>
       {items?.map((item) => (
         <Grid item>
-          <Typography variant="body2" data-testid="footerNavelement">
+          <Typography variant="body2" color="textColors.textColor3" data-testid="footerNavelement">
             {item}
           </Typography>
         </Grid>
