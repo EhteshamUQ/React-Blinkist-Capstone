@@ -23,7 +23,7 @@ const SloganLogo: React.FC<SloganLogoProps> = ({ title }) => {
 
   return (
     <StyledDiv>
-      <img src={Logo} alt="Logo" />
+      <img src={Logo} alt="Logo" data-testid="img" />
       <Typography variant="subtitle1" color="secondary.color" sx = {{width:"378px"}}>
         {title}
       </Typography>
