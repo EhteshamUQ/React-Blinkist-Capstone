@@ -19,7 +19,9 @@ const FooterNavList: React.FC<FooterNavListProps> = ({ title, items }) => {
       </Grid>
       {items?.map((item) => (
         <Grid item>
-          <Typography variant="body2">{item}</Typography>
+          <Typography variant="body2" data-testid="footerNavelement">
+            {item}
+          </Typography>
         </Grid>
       ))}
     </Grid>
